@@ -4,7 +4,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent }  from './app.component';
-import { AppMenuComponent }  from './appmenu.component';
+import { Menu }  from './Menu';
 
 import { HomeComponent } from './static/home.component';
 
@@ -18,9 +18,9 @@ import { HomeComponent } from './static/home.component';
     ]),
   ],
   declarations: [
-    AppMenuComponent,
-    AppComponent,
-    HomeComponent,
+    Menu, //directive
+    AppComponent, //bootstrap
+    HomeComponent, //home directive/page
   ],
   bootstrap: [ AppComponent ]
 })

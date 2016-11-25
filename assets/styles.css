@@ -1,6 +1,7 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    width: 960px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     background: url(./images/sexy.jpg) #980361 center repeat-y;
@@ -20,11 +21,9 @@ my-sexy {
     padding-top: 10px;
 }
 
-
-/** 
+/**
 * MENU 
 **/
-
 .headerTop {
     padding: 0;
     clear: both;
@@ -123,9 +122,9 @@ ul.listItemGall {
 
 ul.listItemGall li {
     list-style: none;
-    width: 328px;
+    width: 310px;
     float: left;
-    margin-right: 18px;
+    margin-right: 10px;
 }
 
 ul.listItemGall li.lastitem {

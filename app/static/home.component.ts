@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
 
 //view controller
 export class HomeComponent {
-    public pageTitle: string = 'Welcome';
+    //collection of sexybongs
     sexybongs: any[];
 
     constructor(private _http: Http){
@@ -17,7 +17,7 @@ export class HomeComponent {
 
     ngOnInit() : void {
         //display iframe
-
+        console.log("Display?");
 
         //get data top 3
         //ajax call
