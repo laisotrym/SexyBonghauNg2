@@ -1,0 +1,25 @@
+{
+  "result": {
+    "data": [
+      {
+        "id": 1,
+        "url": "http://hoahau.tienphong.vn/hoa-hau-2016/suc-hut-goi-cam-cua-nguoi-dep-bien-dao-thi-ha-1046531.tpo",
+        "image": "http://images.tienphong.vn/Uploaded/thanhnga/2016_09_01/9_SSFE.jpg.ashx?w=330&amp;h=200&amp;crop=auto",
+        "title":"Ve dep goi cam"
+      },
+      {
+        "id": 2,
+        "url": "Khung lung, mui Vani",
+        "image": "http://images.tienphong.vn/Uploaded/minhhanh/2016_08_29/Huynh_Thi_Thuy_Dung_bikini_KCEP.jpg.ashx?w=330&amp;h=200&amp;crop=auto",
+        "title":"sfsdf"
+      },
+      {
+        "id": 3,
+        "url": "Khung lung, mui Vani",
+        "image": "http://images.tienphong.vn/Uploaded/minhhanh/2016_08_29/Huynh_Thi_Thuy_Dung_bikini_KCEP.jpg.ashx?w=330&amp;h=200&amp;crop=auto",
+        "title":"sfsdf"
+      }
+    ]
+  },
+  "code": "200"
+}

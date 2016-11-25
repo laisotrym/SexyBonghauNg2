@@ -1,0 +1,19 @@
+﻿<div>
+    <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/y7_HAERZLNw" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div class="blogGallery">
+    <ul class="listItemGall" *ngIf='sexybongs && sexybongs.length'>
+        <li *ngFor="let sexybong of sexybongs">
+            <div class="itemblogImg">
+                <a href="{{sexybong.url}}">
+                    <img [src]="sexybong.image" height="200" alt="Sức hút gợi cảm của Người đẹp biển Đào Thị Hà ">
+                </a>
+            </div>
+            <h3 class="itemTitle">
+                <a class="clorBk" href="#">{{sexybong.title}}</a></h3>
+        </li>
+    </ul>
+    <div class="clearfix"></div>
+</div>

@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background: url(./images/sexy.jpg) #980361 center repeat-y;
+}
+
+.clearfix {
+    clear: both;
+}
+
+my-sexy {
+    display: block;
+    margin: 0 auto;
+    width: 1022px;
+}
+
+.pad20 {
+    padding-top: 10px;
+}
+
+
+/** 
+* MENU 
+**/
+
+.headerTop {
+    padding: 0;
+    clear: both;
+    position: relative;
+    height: 82px;
+}
+
+#mainMnu {
+    background: url(./images/bgMnu.jpg) top left repeat-x;
+    height: 34px;
+    clear: both;
+}
+
+ul.listItemMnuMain {
+    margin: 0;
+    padding: 0;
+}
+
+ul.listItemMnuMain li a,
+ul.listItemMnuMain li.hover a,
+ul.listItemMnuMain li.actedMnu a {
+    padding: 0 18px;
+    display: block;
+    color: #FFF;
+}
+
+ul.listItemMnuMain li,
+ul.listItemMnuMain li.hover,
+ul.listItemMnuMain li.actedMnu {
+    list-style: none;
+    float: left;
+    padding: 0;
+    margin: 0;
+    line-height: 34px;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: relative;
+    background: url(./images/liMnu.jpg) right no-repeat;
+}
+
+.pad {
+    padding-top: 2px;
+    background-color: #c3c2c4
+}
+
+.footer {
+    color: #c3c2c4;
+    line-height: 18px;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/**
+* TITLE
+*/
+
+.title {
+    background: #5f027a;
+    text-indent: 20px;
+    height: 26px;
+    line-height: 26px;
+    clear: both;
+    position: relative;
+    color: #FFF;
+}
+
+.title span.arr {
+    background: url(./images/arrDrop.png) no-repeat;
+    width: 11px;
+    height: 6px;
+    display: block;
+    position: absolute;
+    bottom: -6px;
+    left: 10px;
+}
+
+
+/**
+* GALLERY
+*/
+
+.blogGallery {
+    margin: 0;
+    padding: 5px 0 0 0;
+    clear: both;
+    position: relative;
+}
+
+ul.listItemGall {
+    margin: 0;
+    padding: 0;
+}
+
+ul.listItemGall li {
+    list-style: none;
+    width: 328px;
+    float: left;
+    margin-right: 18px;
+}
+
+ul.listItemGall li.lastitem {
+    margin-right: 0px;
+}
+
+ul.listItemGall li h4.itemTitle {
+    height: 52px;
+    overflow: hidden;
+    font-size: 16px;
+    margin-top: 8px;
+    line-height: 1.3em;
+    font-weight: bold;
+    font-family: 'RobCond', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+a.clorBk {
+    color: #000;
+    font-weight: bold;
+}
+
+
+/**
+* page detail
+*/
+
+.sexy-list {
+    background-color: white;
+}
+
+input.search {
+    width: 150px;
+    padding: 2px;
+    border: none;
+}
+
+table {
+    width: 100%;
+}
+
+table tr th {
+    text-align: left;
+}
