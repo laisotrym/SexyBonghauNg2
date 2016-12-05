@@ -7,11 +7,13 @@ import { AppComponent }  from './app.component';
 import { Menu }  from './Menu';
 
 import { HomeComponent } from './static/home.component';
+import {SexyBongModule} from "./sexybong/sexybong.module";
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpModule,
+    SexyBongModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: '**', redirectTo: '', pathMatch: 'full' }
