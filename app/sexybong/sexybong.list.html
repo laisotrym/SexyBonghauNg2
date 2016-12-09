@@ -9,20 +9,22 @@
 <audio controls>
     <source src="mock_data/vonguoita.mp3" type="audio/mpeg">
 </audio>
+<button id="btnList">List</button>
+<button id="btnCard">Card</button>
 
 <div class="sexy-list">
     <!-- Filter   -->
     <span>Search </span>
-    <input class="search" type='text' [(ngModel)]="filterBy" />
-    <h3>Filter by keyword: {{filterBy}}</h3>
+    <input class="search" type='text' [(ngModel)]="filter.filterBy" />
+    <h3>Filter by keyword: {{filter.filterBy}}</h3>
 
     <!-- table -->
     <div class='has-error'> </div>
-    <table *ngIf='sexybongs && sexybongs.length'>
+    <table *ngIf='sexybongs && sexybongs.length' id="mode-list">
         <thead>
         <tr>
             <th>
-                <button *ngIf="showInfo" (click)="fiveHundredInfo()">
+                <button (click)="fiveHundredInfo()">
                     {{showInfo?"Show":"Hide"}} info
                 </button>
             </th>
@@ -34,14 +36,17 @@
         </tr>
         </thead>
         <tbody>
-        <tr *ngFor="let sexy of sexybongs">
+
+        <!-- if i>=fromNr <=toNr -->
+        <template ngFor let-sexy [ngForOf]="sexybongs" let-i="index">
+        <tr *ngIf="i >= fromNr && i <= toNr">
             <td>
                 <!-- style="width=12px"-->
                 <img *ngIf="showInfo" [src]="sexy.avatarUrl" [style.width.px]="widthImage">
             </td>
             <td>
                 <p>
-                    <a [routerLink]="[ '/sexybong', sexy.id ]">{{sexy.name}}</a></p>
+                    <a [routerLink]="['/sexybong', sexy.id ]">{{sexy.name}}</a></p>
                 <p>Tuoi: {{sexy.info}}</p>
             </td>
             <td>
@@ -51,11 +56,29 @@
                 <p>Height: {{sexy.metrics.height}}</p>
             </td>
             <td> {{sexy.catse | currency:'VND':true:'.2'}}</td>
-            <td><span *ngIf="flagShow">{{sexy.codeNr | lowercase }}</span></td>
+            <td><span *ngIf="showInfo">{{sexy.codeNr | lowercase }}</span></td>
             <td>
                 {{sexy.loveNr}}
             </td>
         </tr>
+        </template>
         </tbody>
+
+        <!-- Pager -->
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>
+                    <a [routerLink]="['/sexybongs', { page: 1 } ]">1</a>
+                    <a [routerLink]="['/sexybongs', { page: 2 } ]">2</a>
+                </td>
+            </tr>
+        </tfoot>
     </table>
+
+    <div id="mode-card" style="display: none;">
+        <div *ngFor="let sexybong of sexybongs">
+            <img src="{{sexybong.avatarUrl}}" [style.width.px]="widthImage" />
+        </div>
+    </div>
 </div>
